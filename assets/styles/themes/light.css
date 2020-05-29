@@ -1,0 +1,50 @@
+:root {
+	--body: #F9F9F9;
+
+	--section: #FFFFFF;
+	--shadow: #1B1E2B1C;
+	--text: #505050;
+
+	--inputs: #F9F9F9;
+	--placeholder: #50505050;
+	--progress: #72799D7A;
+
+	--toggle: #1B1E2B;
+	--toggle-checked: #72799D;
+}
+
+body {
+	background: var(--body);
+}
+
+.section {
+	background: var(--section);
+	box-shadow: 0 0 13px 0 var(--shadow);
+	color: var(--text)
+}
+
+.tags {
+	border: 1px solid var(--text);
+}
+
+input, textarea {
+	background: var(--inputs);
+	border: none;
+	color: inherit;
+}
+
+::placeholder {
+	color: var(--placeholder)
+}
+
+.progress-bar {
+	background: var(--progress);
+}
+
+.toggle label {
+	background: var(--toggle);
+}
+
+.toggle label:after {
+	background: var(--toggle-checked);
+}
